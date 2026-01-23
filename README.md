@@ -1,62 +1,106 @@
-# Ecommerce-Delivery-Performance-Dashboard
-End-to-end e-commerce analytics project using SQL, Power BI, and Python to analyze sales, delivery delays, and revenue risk.
+# E-Commerce Delivery Performance Analytics Dashboard : 
 
-Project Objective : 
+An end-to-end analytics project using **SQL, Power BI, and Python** to analyze e-commerce order performance, delivery delays, and associated revenue risk, with the goal of identifying operational inefficiencies and improvement opportunities.
 
-The objective of this project is to analyze e-commerce order-level data to identify revenue trends, delivery performance issues, and customer distribution patterns, and convert findings into actionable business insights.
+---
 
+## Project Objective
 
-Key Business Questions Answered :
+The objective of this project is to analyze order-level e-commerce data in order to:
+- Monitor sales and order trends over time  
+- Measure delivery delay performance  
+- Quantify revenue impacted by delayed deliveries  
+- Identify customer regions with higher operational risk  
 
-* How are total orders and revenue trending over time?
-* What percentage of orders are delivered late?
-* Which customer states generate the highest revenue?
-* Which states have the highest delivery delay rates?
-* How does delivery performance vary across customer states?
+---
 
+## Key Business Questions Answered
 
-Data Preparation & Tools Used :
+- How are total orders and revenue trending over time?
+- What percentage of orders are delivered late?
+- How much revenue is associated with delayed deliveries?
+- Which customer states generate the highest revenue?
+- Which states experience the highest delivery delay rates?
 
-* Data cleaning and transformation were performed using SQL staging tables in PostgreSQL.
-* Python was used only for exploratory data analysis (EDA) and data validation.
-* Power BI was used for data modeling, DAX measures, and dashboard visualization.
+---
 
+## Tools & Technologies
 
-Key Metrics \& KPIs :
+- **PostgreSQL** – data cleaning, staging tables, and fact table creation  
+- **Python** – exploratory data analysis (EDA) and data validation  
+- **Power BI** – data modeling, DAX measures, and interactive dashboard design  
 
-* Total Orders
-* Total Revenue
-* On-Time Orders
-* Delayed Orders
-* Order Delay Rate (%)
-* Total Customers
-* Delayed Revenue
-* Revenue at Risk (%)
+---
 
-The repository is organized as follows :
+## Key Metrics & KPIs
+
+- Total Orders  
+- Total Revenue  
+- Total Customers  
+- On-Time Orders  
+- Delayed Orders  
+- Order Delay Rate (%)  
+- Delayed Revenue  
+- Revenue at Risk (%)  
+
+---
+
+## Dashboard Overview
+
+The Power BI dashboard provides:
+- KPI cards summarizing order volume, delivery performance, and revenue risk  
+- Trend analysis of orders and revenue over time  
+- State-level analysis of order volume, revenue, and delay rates  
+- Interactive filtering by customer state  
+
+The dashboard is designed for **operations, logistics, and business stakeholders** to support data-driven decision-making.
+
+---
+
+## Repository Structure
 
 ├── data/
-│   ├── raw/
-│   │   └── olist_raw.csv
-│   └── cleaned/
-│       └── olist_cleaned.csv
+│ ├── raw/
+│ │ └── .gitkeep
+│ └── cleaned/
+│ └── .gitkeep
 │
 ├── sql/
-│   ├── create_tables.sql
-│   ├── fact_orders.sql
-│   └── business_metrics.sql
+│ ├── create_tables.sql
+│ ├── fact_orders.sql
+│ └── business_metrics.sql
 │
 ├── notebooks/
-│   └── eda_validation.ipynb
+│ └── eda_validation.ipynb
 │
 ├── dashboard/
-│   └── olist_powerbi_dashboard.pbix
+│ └── olist_powerbi_dashboard.pbix
 │
 └── README.md
 
-Key Insights :
 
-* ~92% of orders were delivered on time, with ~8% experiencing delays.
-* Delivery delays are disproportionately higher in certain customer states, indicating potential logistics bottlenecks.
-* Revenue shows a stable trend despite fluctuations in order volume.
-* Customer concentration by state highlights regional demand patterns that can guide warehouse and delivery optimization.
+---
+
+## Data Availability
+
+The raw and cleaned datasets are not included in this repository due to GitHub file size limitations.
+
+**Dataset Source:**  
+Brazilian E-Commerce Public Dataset (Olist) – Kaggle
+
+All data transformations, business logic, and KPI calculations are fully reproducible using the provided SQL scripts and Python notebook.
+
+---
+
+## Key Insights
+
+- Approximately **92% of orders were delivered on time**, while **~8% experienced delivery delays**
+- Delayed orders contribute to a measurable portion of total revenue, indicating **revenue exposure due to logistics performance**
+- Delivery delays are concentrated in specific customer states, highlighting potential regional fulfillment bottlenecks
+- Revenue and order trends remain stable overall, despite variations in delivery performance across regions
+
+---
+
+## Business Value
+
+This project demonstrates how operational metrics and delivery performance can be translated into **financial impact metrics**, enabling stakeholders to prioritize logistics improvements and reduce revenue risk.
