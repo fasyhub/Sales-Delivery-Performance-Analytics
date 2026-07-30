@@ -78,7 +78,7 @@ The dashboard is designed for **operations, logistics, and business stakeholders
 │
 └── README.md
 
-
+google colab link : https://colab.research.google.com/drive/1mXYYKrm3fyXUmRbWsrffXv7mgordU_0H?usp=sharing
 ---
 
 ## Data Availability
