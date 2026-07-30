@@ -1,4 +1,4 @@
-# E-Commerce Delivery Performance Analytics Dashboard : 
+# Sales & Delivery Performance Analytics : 
 
 An end-to-end analytics project using **SQL, Power BI, and Python** to analyze e-commerce order performance, delivery delays, and associated revenue risk, with the goal of identifying operational inefficiencies and improvement opportunities.
 
